@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Skill from './Skill'
 import { motion } from 'framer-motion'
 import { HiMiniCodeBracket } from 'react-icons/hi2'
@@ -109,6 +109,10 @@ export default function Skills() {
             image: "https://i.ibb.co/jDsM2x4/icons8-typescript-96.png"
         }
     ]
+
+    useEffect(() => {
+        console.log("hola");
+    }, [])
 
   return (
     <motion.section
